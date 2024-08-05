@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="screens.HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appBar"
+        tools:ignore="MissingConstraints" >
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appBarText"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/androidImage"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/android"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/androidButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/androidImage"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/button"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/androidButtonText"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/iosImage"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/ios"
+        app:layout_constraintTop_toBottomOf="@id/androidButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/iosButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iosImage"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/button"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/iosButtonText"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/fullstackImage"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/fullstack"
+        app:layout_constraintTop_toBottomOf="@id/iosButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/fullstackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fullstackImage"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/button"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/fullstackButtonText"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
